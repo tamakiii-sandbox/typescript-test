@@ -1,7 +1,5 @@
 PACKAGES := \
-	webpack \
-	webpack-cli \
-	webpack-dev-server
+	eslint
 	# @types/node \
 	# @types/react \
 	# @types/react-dom \
@@ -20,4 +18,18 @@ PACKAGES := \
 	# typescript \
 
 DEV_PACKAGES := \
-	webpack-dev-server
+	webpack \
+	webpack-cli \
+	webpack-dev-server \
+	typescript \
+	ts-loader
+	# @babel/core \
+	# @babel/preset-env \
+	# babel-loader \
+	# babel-plugin-syntax-dynamic-import \
+	# css-loader \
+	# node-sass \
+	# sass-loader \
+	# style-loader \
+	# uglifyjs-webpack-plugin \
+
