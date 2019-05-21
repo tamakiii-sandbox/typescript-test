@@ -20,11 +20,17 @@ clean:
 	rm -f webpack.config.js
 	rm -f tsconfig.json
 	rm -rf dist
+	rm -rf src
+	rm -rf public
 
 package.json:
 	npm init --yes
 	npm install --save-prod $(PACKAGES)
 	npm install --save-dev $(DEV_PACKAGES)
+
+
+src dist public:
+	mkdir $@
 
 webpack.config.js:
 	cp make/webpack.config.js $@
@@ -32,13 +38,9 @@ webpack.config.js:
 tsconfig.json:
 	npx tsc --init
 
-src/index.ts: $(@D)
+src/index.ts: src
 	touch src/index.ts
 
-public/index.html: $(@D)
+public/index.html: public
 	cp make/public/index.html $@
 
-src:
-dist:
-ublic:
-	mkdir $@
