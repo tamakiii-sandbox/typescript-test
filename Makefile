@@ -8,5 +8,6 @@ clean:
 
 package.json:
 	npm init --yes
-	npm install $(PACKAGES)
+	npm install --save-prod $(PACKAGES)
+	npm install --save-dev $(DEV_PACKAGES)
 

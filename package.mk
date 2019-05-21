@@ -1,5 +1,7 @@
 PACKAGES := \
-	webpack
+	webpack \
+	webpack-cli \
+	webpack-dev-server
 	# @types/node \
 	# @types/react \
 	# @types/react-dom \
@@ -16,6 +18,6 @@ PACKAGES := \
 	# styled-components \
 	# ts-loader \
 	# typescript \
-	# webpack \
-	# webpack-cli \
-	# webpack-dev-server
+
+DEV_PACKAGES := \
+	webpack-dev-server
