@@ -1,5 +1,4 @@
 PACKAGES := \
-	eslint
 	# @types/node \
 	# @types/react \
 	# @types/react-dom \
@@ -18,6 +17,7 @@ PACKAGES := \
 	# typescript \
 
 DEV_PACKAGES := \
+	eslint \
 	webpack \
 	webpack-cli \
 	webpack-dev-server \

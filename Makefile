@@ -17,20 +17,18 @@ init: \
 
 clean:
 	rm -f package.json
+	rm -f package-lock.json
 	rm -f webpack.config.js
 	rm -f tsconfig.json
 	rm -rf dist
 	rm -rf src
 	rm -rf public
+	rm -rf node_modules
 
 package.json:
 	npm init --yes
 	npm install --save-prod $(PACKAGES)
 	npm install --save-dev $(DEV_PACKAGES)
-
-
-src dist public:
-	mkdir $@
 
 webpack.config.js:
 	cp make/webpack.config.js $@
@@ -44,3 +42,5 @@ src/index.ts: src
 public/index.html: public
 	cp make/public/index.html $@
 
+src dist public:
+	mkdir $@
