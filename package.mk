@@ -22,7 +22,11 @@ DEV_PACKAGES := \
 	webpack-cli \
 	webpack-dev-server \
 	typescript \
-	ts-loader
+	ts-loader \
+	jest \
+	enzyme \
+	@types/jest \
+	@types/enzyme \
 	# @babel/core \
 	# @babel/preset-env \
 	# babel-loader \
