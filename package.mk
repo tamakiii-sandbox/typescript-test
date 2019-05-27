@@ -25,8 +25,10 @@ DEV_PACKAGES := \
 	ts-loader \
 	jest \
 	enzyme \
+	enzyme-adapter-react-16 \
 	@types/jest \
 	@types/enzyme \
+	@types/enzyme-adapter-react-16
 	# @babel/core \
 	# @babel/preset-env \
 	# babel-loader \
