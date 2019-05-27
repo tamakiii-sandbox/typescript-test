@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/tamakiii-sandbox/typescript-test#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.13",
     "eslint": "^5.16.0",
+    "jest": "^24.8.0",
     "ts-loader": "^6.0.1",
     "typescript": "^3.4.5",
     "webpack": "^4.32.0",
