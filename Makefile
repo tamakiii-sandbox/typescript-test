@@ -2,10 +2,10 @@ include package.mk
 SHELL := bash
 
 build-dev:
-	npx webpack --mode development --watch --progress --verbose
+	npx nodemon --watch webpack.config.js --watch package.json --exec "npx webpack --mode development --watch --progress --verbose"
 
 webpack-dev-server:
-	npx webpack-dev-server --mode development --port 8080 --hot --content-base public --output-public-path dist
+	npx nodemon --watch webpack.config.js --watch package.json --exec "npx webpack-dev-server --mode development --port 8080 --hot --content-base public --output-public-path dist"
 
 init: \
 	package.json \
@@ -14,6 +14,9 @@ init: \
 	public/index.html \
 	src/index.ts \
 	dist
+
+test:
+	npx jest --watch
 
 clean:
 	rm -f package.json
