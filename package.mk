@@ -1,18 +1,18 @@
 PACKAGES := \
 	react \
 	react-dom \
+	styled-components \
 	@types/react \
 	@types/react-dom
+	@types/styled-components
 	# @types/node \
 	# @types/react-virtualized \
-	# @types/styled-components \
 	# css-loader \
 	# html-webpack-plugin \
 	# react-test-renderer \
 	# react-virtualized \
 	# source-map-support \
 	# style-loader \
-	# styled-components \
 	# ts-loader \
 	# typescript \
 
