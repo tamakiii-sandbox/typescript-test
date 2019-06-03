@@ -18,13 +18,13 @@ module.exports = {
   // clearMocks: false,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: ["src/**/*.{tsx,ts,js}"],
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: "./test/coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -167,6 +167,7 @@ module.exports = {
   transform: {
     "\\.(ts|tsx)$": "ts-jest",
     "\\.(js|jsx)$": "babel-jest",
+
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
