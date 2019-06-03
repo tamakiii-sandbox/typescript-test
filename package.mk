@@ -26,9 +26,11 @@ DEV_PACKAGES := \
 	jest \
 	enzyme \
 	enzyme-adapter-react-16 \
+	react-test-renderer \
 	@types/jest \
 	@types/enzyme \
-	@types/enzyme-adapter-react-16
+	@types/enzyme-adapter-react-16 \
+	@types/react-test-renderer
 	# @babel/core \
 	# @babel/preset-env \
 	# babel-loader \
