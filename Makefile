@@ -1,3 +1,5 @@
+.PHONY: test
+
 include package.mk
 SHELL := bash
 
@@ -15,8 +17,8 @@ init: \
 	src/index.ts \
 	dist
 
-test:
-	npx jest --watch
+test-watch:
+	npx nodemon --watch jest.config.js --watch test/setup.js --watch .babelrc --exec "npx jest --watchAll"
 
 clean:
 	rm -f package.json

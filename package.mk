@@ -3,7 +3,7 @@ PACKAGES := \
 	react-dom \
 	styled-components \
 	@types/react \
-	@types/react-dom
+	@types/react-dom \
 	@types/styled-components
 	# @types/node \
 	# @types/react-virtualized \
@@ -27,10 +27,15 @@ DEV_PACKAGES := \
 	enzyme \
 	enzyme-adapter-react-16 \
 	react-test-renderer \
+	ts-jest \
+	power-assert \
+	@babel/preset-env \
+	@babel/preset-react \
 	@types/jest \
 	@types/enzyme \
 	@types/enzyme-adapter-react-16 \
-	@types/react-test-renderer
+	@types/react-test-renderer \
+	@types/power-assert
 	# @babel/core \
 	# @babel/preset-env \
 	# babel-loader \

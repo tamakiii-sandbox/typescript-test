@@ -27,6 +27,11 @@ module.exports = {
         options: {
           transpileOnly: true
         }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
       }
     ]
   },
